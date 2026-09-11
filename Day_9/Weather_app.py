@@ -1,6 +1,6 @@
 import requests
 
-api_key = "78a555d22cc04b3d8ac140754260603"
+api_key = "write_your_own_api_key"
 
 city = 'london'
 
