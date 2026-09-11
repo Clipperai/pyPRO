@@ -1,0 +1,4 @@
+hello Python world.
+Second line.
+Using with statement.
+Using with statement.
