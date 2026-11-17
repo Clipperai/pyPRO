@@ -6,6 +6,6 @@ print(x - y)
 print(x * y)
 print(x / y)
 
+# taking multiple inputs Simultaniously
 a,b,c=12,34,56
 print(a,b,c)
-x=5
