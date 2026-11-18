@@ -1,5 +1,7 @@
+# Day 3 - Squares of a list: build a new list with a loop
+
 num = []
-n = int(input("Enter number of elemnts:"))
+n = int(input("Enter number of elements:"))
 
 for i in range(n):
     item = int(input("Enter numbers: "))
@@ -10,6 +12,6 @@ print(num)
 squares = []
 
 for i in num:
-    squares.append(i *i)
+    squares.append(i * i)
 
 print(squares)
