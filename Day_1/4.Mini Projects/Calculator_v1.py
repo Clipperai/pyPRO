@@ -1,3 +1,5 @@
+# Day 1 - Calculator v1: +, -, *, / on a list of numbers
+
 num = []
 
 n = int(input("Enter the number of elements: "))
@@ -24,17 +26,14 @@ elif choice == '3':
     print(result)
 
 elif choice == '4':
-    if num[0] != 0:
-        result = num[0]
-        for i in range(1, len(num)):
-            if num[i] == 0:
-                print("Cannot divide by zero.")
-                break
-            else:
-              print(result)
+    result = num[0]
+    for i in range(1, len(num)):
+        if num[i] == 0:
+            print("Cannot divide by zero.")
+            break
+        result /= num[i]
     else:
-        print("Cannot divide by zero.")
+        print(result)
 
 else:
-    print("Invalid operation.")   
-
+    print("Invalid operation.")
