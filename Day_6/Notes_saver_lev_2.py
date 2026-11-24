@@ -1,3 +1,4 @@
+# Day 6 - Notes Saver (Level 2): menu version - add, view and exit
 print("\n\nWelcome to Our Notes Saver:\n")
 
 while True:
@@ -10,17 +11,17 @@ while True:
     if choice == '1':
         note = input("\nEnter your note: ")
         with open("notes.txt", 'a') as v:
-         v.write(note + "\n")
+            v.write(note + "\n")
     
     elif choice == '2':
-       with open("notes.txt", 'r') as v:
-          print("\nYour Notes:\n ")
-          print(v.read())
+        with open("notes.txt", 'r') as v:
+            print("\nYour Notes:\n ")
+            print(v.read())
 
     elif choice == '3':
-       print("\nExiting...\n")
-       break
+        print("\nExiting...\n")
+        break
 
     else:
-       print("Invalid Choice")
+        print("Invalid Choice")
               
