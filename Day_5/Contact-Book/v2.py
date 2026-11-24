@@ -1,3 +1,4 @@
+# Day 5 - Contact Book v2: menu version - add, view, search and exit
 contacts = {}
 
 while True:
@@ -14,13 +15,13 @@ while True:
         contacts[name] = phone
 
     elif choice == '2':       
-      if contacts:
-        print("\nSaved Contacts: ")
-        for n,p in contacts.items():
-            print(n, ":", p)
+        if contacts:
+            print("\nSaved Contacts: ")
+            for n,p in contacts.items():
+                print(n, ":", p)
       
-      else:
-         print("\nNot any Contacts here yet. ")
+        else:
+            print("\nNot any Contacts here yet. ")
           
 
     elif choice == '3':       

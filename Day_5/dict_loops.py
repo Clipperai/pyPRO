@@ -1,3 +1,4 @@
+# Day 5 - Dictionary loops: updating contacts and looping with .items()
 contacts = {}
 
 contacts['Rahul'] = '9876543210'
@@ -12,7 +13,3 @@ print(contacts)
 
 for name, number in contacts.items():
     print(name, ":", number)
-
-
-
-

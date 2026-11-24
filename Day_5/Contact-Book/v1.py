@@ -1,3 +1,4 @@
+# Day 5 - Contact Book v1: add one contact and print saved contacts
 contacts = {}
 
 name = input("Enter name: ")
