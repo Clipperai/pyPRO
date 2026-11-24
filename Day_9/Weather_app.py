@@ -1,13 +1,23 @@
+# Day 9 - Weather App v1: current weather for a city using WeatherAPI
 import requests
 
-api_key = "write_your_own_api_key"
+# Add your WeatherAPI key here
+api_key = "YOUR_API_KEY"
 
 city = 'london'
 
 url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}&aqi=no"
 
 response = requests.get(url)
-data = response.json()
+try:
+    data = response.json()
+except Exception:
+    print("Error: Could not get weather data. Check your API key.")
+    exit()
+
+if "error" in data:
+    print("Error:", data["error"]["message"])
+    exit()
 
 location = data["location"]["name"]
 temperature = data["current"]["temp_c"]

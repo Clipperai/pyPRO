@@ -1,3 +1,4 @@
+# Day 9 - Extracting API data: pull name and email from the JSON response
 import requests
 
 url = 'https://randomuser.me/api/'

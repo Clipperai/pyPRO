@@ -1,3 +1,4 @@
+# Day 9 - API call: fetch JSON data from an API with requests
 import requests
 
 url = 'https://randomuser.me/api/'
