@@ -1,3 +1,4 @@
+# Day 8 - Parsing HTML: fetch a page and print its title with BeautifulSoup
 from bs4 import BeautifulSoup
 import requests
 
